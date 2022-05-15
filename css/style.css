@@ -685,6 +685,112 @@ section:nth-child(even) {
     padding: 1rem 4rem;
 }
 
+/* Payment page styling */
+
+.payment .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.payment .row .image {
+    flex: 1 1 45rem;
+}
+
+.payment .row .image img {
+    width: 100%;
+}
+
+.payment .row form {
+    flex: 1 1 45rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.payment .row form h3 {
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.payment .row form .box {
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.payment .row form .btn {
+    padding: 1rem 4rem;
+}
+
+.payment .payimage{
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+}
+
+/* booking a room styling*/
+
+.rooms .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.rooms .row .image {
+    flex: 1 1 45rem;
+}
+
+.rooms .row .image img {
+    width: 100%;
+}
+
+.rooms .row form {
+    flex: 1 1 45rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: left;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.rooms .row form h3 {
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.rooms .row form .box {
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.rooms .row form .btn {
+    padding: 1rem 4rem;
+}
+
+.rooms .roombook {
+    font-size: 16px;
+}
 /* media queries  */
 @media (max-width:991px) {
 

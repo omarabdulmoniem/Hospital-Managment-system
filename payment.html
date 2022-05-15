@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book an Appointment </title>
+    <link class="logo" rel="icon" type="image/x-icon" href="image/icon.jpg">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -24,10 +25,10 @@
         <a href="homepage.html" class="logo"> <i class="fas fa-heartbeat"></i> Heart Beats </a>
 
         <nav class="navbar">
-            <a href="#home" class="btn">home</a>
+            <a href="homepage.html" class="btn">home</a>
             <a href="#about" class="btn">about</a>
-            <a href="#payment" class="btn">payment</a>
-            <a href="homepage.html" class="btn">main page</a>
+            <a href="doctors.html" class="btn">doctors</a>
+            <a href="complains.html" class="btn">Complain</a>
 
         </nav>
 
@@ -38,13 +39,10 @@
     <!-- Home section starts -->
     <section class="home" id="home">
 
-        <div class="image">
-            <img src="OIP.jfif" alt="">
-        </div>
-
         <div class="content">
             <h3>Welcome</h3>
-            <p>How can we help you</p>
+            <p> you can pay for your bookings online! <br>
+                Please check the code we sent you for your payment</p>
             <!-- <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a> -->
         </div>
 
@@ -56,10 +54,31 @@
 
 
     <section class="payment" id="payment">
+        
+        <h1 class="heading"> <span>Pay</span> now </h1>
 
+        <div class="row">
 
+            <div class="image">
+                <img src="image/pay.gif" alt="">
+            </div>
 
+            <form action="">
+                <h3>Enter your transaction details</h3>
+                <div class="payimage">
+                    <img src="image/crediticons.PNG" alt="">
+                </div>
+                <input type="text" id="paycode" name="paycode" placeholder="Payment code" class="box">
+                <input type="text" id="cname" name="cardname" placeholder="Name on card" class="box">
+                <input type="text" id="ccnum" name="cardnumber" placeholder="Card Number" class="box">
+                <input type="text" id="expmonth" name="expmonth" placeholder="Exp month" class="box">
+                <input type="text" id="expyear" name="expyear" placeholder="Exp year" class="box">
+                <input type="number" id="cvv" name="cvv" placeholder="CVV" class="box">
+                <input type="number" id="amount" name="amount" placeholder="Amount to be payed eg. 50$" class="box">
+                <input type="submit" value="Pay now" class="btn">
+            </form>
 
+        </div>
     </section>
 
     <!-- doctors section ends -->

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book an Appointment </title>
+    <link class="logo" rel="icon" type="image/x-icon" href="image/icon.jpg">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -24,11 +25,11 @@
         <a href="homepage.html" class="logo"> <i class="fas fa-heartbeat"></i> Heart Beats </a>
 
         <nav class="navbar">
-            <a href="#home" class="btn">home</a>
+            <a href="homepage.html" class="btn">home</a>
             <a href="#about" class="btn">about</a>
-            <a href="#rooms" class="btn">rooms</a>
-            <a href="homepage.html" class="btn">main page</a>
-
+            <a href="complains.html" class="btn">Complain</a>
+            <a href="appointment.html" class="btn">Appointment</a>
+           
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -39,12 +40,13 @@
     <section class="home" id="home">
 
         <div class="image">
-            <img src="OIP.jfif" alt="">
+            <img src="image/roomex.jpg" alt="">
         </div>
 
         <div class="content">
             <h3>Welcome</h3>
-            <p>How can we help you</p>
+            <p>Our rooms are equiped with the most modern technologies <br>
+               in the medical field to make you feel comfy and safe </p>
             <!-- <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a> -->
         </div>
 
@@ -57,6 +59,55 @@
 
     <section class="rooms" id="rooms">
 
+        <h1 class="heading"> <span>book</span> now </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="image/room.gif" alt="">
+            </div>
+
+            <form action="">
+                <h3>book a room</h3>
+                <label class="roombook" for="fname">Full Name</label>
+                <input type="text" id="fname" placeholder="Enter your Full Name" class="box">
+
+                <label class="roombook" for="pnum">Phone Number</label>
+                <input type="tel" id="pnum" placeholder="Number" class="box">
+
+                <label class="roombook" for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Enter your E-mail" class="box">
+
+                <label class="roombook" for="sdoc">Supervising doctor</label>
+                <select name="Supervising Doctor" class="box" id="sdoc">
+                    <option value=" "> Choose your supervising Doctor : </option>
+                    <optgroup label="Neurology">
+                        <option> Dr. Ahmed Metwaly</option>
+                        <option> Dr. Khalid Ali</option>
+                    </optgroup>
+                    <optgroup label="Cardiology">
+                        <option> Dr. Sahar Isamil</option>
+                        <option> Dr. Raouf Elghazaly </option>
+                    </optgroup>
+                    <optgroup label="Nephrology">
+                        <option> Dr. Nermin Hany </option>
+                    </optgroup>
+                    <optgroup label="Internal Medicine">
+                        <option> Dr. Radwa Mostafa </option>
+                        <option> Dr. Mohamed Yassen </option>
+                    </optgroup>   
+                </select>
+
+                <label class="roombook" for="sdate">Start date</label>
+                <input type="date" id="sdate" class="box">
+
+                <label class="roombook" for="edate">End date</label>
+                <input type="date" id="edate" class="box">                
+
+                <input type="submit" value="book now" class="btn">
+            </form>
+
+        </div>
 
 
 
